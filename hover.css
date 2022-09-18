@@ -1,0 +1,29 @@
+.header h1:hover {
+  filter: brightness(200%);
+  transition: all 1s;
+}
+.header h2:hover {
+  filter: brightness(200%);
+  transition: all 1s;
+}
+.header h3:hover {
+  filter: brightness(150%);
+  transition: all 1s;
+}
+
+h5:hover {
+  filter: brightness(200%);
+  transition: all 1s;
+}
+h6:hover {
+  filter: brightness(200%);
+  transition: all 1s;
+}
+.noticia-direita img:hover {
+  filter: brightness(50%);
+  transition: all 1s;
+}
+.imagem-esquerda img:hover {
+  filter: brightness(50%);
+  transition: all 1s;
+}

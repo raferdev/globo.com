@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="grobo.ico" />
+
+    <!--Audio chato em homenagem as primeiras páginas de internet-->
+
+    <audio controls autoplay>
+      <source src="vinheta.mp3" type="audio/mpeg" />
+    </audio>
+
+    <!---->
+    <style>
+      /*tirar o sublinhado do hyperlink (outras coisas tbm)*/
+      A {
+        text-decoration: none;
+      }
+      /*mobile*/
+      /*na real, melhor deixas assim por enquanto*/
+      /**/
+      /*Pro audio não atrapalhar e empurar o site pra baixo*/
+      audio {
+        top: 0;
+        position: fixed;
+        left: 0;
+      }
+      /**/
+
+      /*hover*/
+      .header h1:hover {
+        filter: brightness(200%);
+        transition: all 1s;
+      }
+      .header h2:hover {
+        filter: brightness(200%);
+        transition: all 1s;
+      }
+      .header h3:hover {
+        filter: brightness(150%);
+        transition: all 1s;
+      }
+
+      h5:hover {
+        filter: brightness(200%);
+        transition: all 1s;
+      }
+      h6:hover {
+        filter: brightness(200%);
+        transition: all 1s;
+      }
+      .noticia-direita img:hover {
+        filter: brightness(50%);
+        transition: all 1s;
+      }
+      .imagem-esquerda img:hover {
+        filter: brightness(50%);
+        transition: all 1s;
+      }
+      .barra-conteudos p:hover {
+        filter: brightness(200%);
+      }
+      .corpo2:hover {
+        filter: brightness(200%);
+        transition: all 1s;
+      }
+      .corpo3:hover {
+        filter: brightness(200%);
+        transition: all 1s;
+      }
+      .corpo4:hover {
+        filter: brightness(200%);
+        transition: all 1s;
+      }
+      /*fim do hover*/
+
+      .tudo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+      }
+      .conteudo {
+        width: 1274px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .risquinho {
+        background-color: #f5f6f7;
+        height: 1px;
+        width: 100%;
+      }
+      .logo {
+        margin: 22px;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: "Encode Sans";
+      }
+      .barra-conteudos {
+        width: 1250px;
+        display: flex;
+        font-weight: 700;
+        font-size: 19px;
+        justify-content: space-between;
+        letter-spacing: -0.02em;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 24px;
+        align-items: center;
+        text-align: center;
+      }
+      .noticia-esquerda {
+        width: 624px;
+        height: 201px;
+      }
+      .header {
+        width: 624px;
+      }
+      .header h1 {
+        font-size: 52px;
+        font-weight: bold;
+        color: #c4160c;
+        line-height: 67px;
+        letter-spacing: -0.01em;
+        margin-bottom: 29px;
+        transition: all 0.5s;
+      }
+      .bloco-central {
+        width: 1273px;
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+      }
+      .risco-vertical {
+        margin-left: 35px;
+        margin-right: 35px;
+        display: flex;
+        align-items: stretch;
+        background-color: #ebedef;
+        height: 845px;
+        width: 1px;
+      }
+      h2 {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: -0.01em;
+        color: #303134;
+        margin-bottom: 7px;
+      }
+      h3 {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: -0.01em;
+        color: #303134;
+        margin-bottom: 25px;
+      }
+      .noticia-direita {
+        display: flex;
+        justify-content: flex-start;
+        width: 587;
+        height: 201px;
+      }
+      .imagem-direita {
+        width: 240px;
+        height: 128px;
+        border-radius: 12px;
+      }
+      .bloco-esquerda {
+        width: 624px;
+        margin-top: 25px;
+      }
+      .imagem-esquerda {
+        width: 624px;
+        margin-bottom: 36px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .bloquinho-esquerda {
+        width: 193px;
+      }
+      .bloco-esquerda img {
+        width: 193px;
+        height: 110px;
+        border-radius: 12px;
+      }
+      h4 {
+        margin-top: 11px;
+        margin-bottom: 6px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: -0.02em;
+        color: #c4170c;
+      }
+      h5 {
+        width: 193px;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: -0.045em;
+        color: #2f3134;
+        margin-bottom: 4.5px;
+        transition: all 0.5s;
+      }
+      h6 {
+        width: 174px;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: -0.048em;
+        color: #2f3134;
+        transition: all 0.5s;
+      }
+      .ultimo-bloco-esquerda {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+      }
+      .ultimo-bloquinho-esquerda {
+        width: 193px;
+      }
+      .noticia-direita-esquerda {
+        width: 240px;
+      }
+      .corpo1 {
+        margin-top: 11px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: -0.02em;
+        transition: all 0.5s;
+      }
+      .corpo2 {
+        margin-top: 6px;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: -0.045em;
+        transition: all 0.5s;
+        color: #2f3134;
+      }
+      .corpo3 {
+        width: 217px;
+        margin-top: 4px;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: -0.048em;
+        transition: all 0.5s;
+        color: #2f3134;
+      }
+
+      .corpo4 {
+        width: 217px;
+        margin-top: 9px;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: -0.048em;
+        transition: all 0.5s;
+        color: #2f3134;
+      }
+      .noticia-direita-esquerda {
+        height: 763px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .noticia-direita-direita {
+        width: 240px;
+        height: 763px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .noticia-direita-esquerda .corpo1 {
+        color: #16ae54;
+      }
+      .noticia-direita-direita .corpo1 {
+        color: #ec8006;
+      }
+      .quadrado-direita1 {
+        margin-bottom: 50px;
+      }
+      .quadrado-direita2 {
+        margin-bottom: 42px;
+      }
+      .quadrado-direita4 {
+        margin-bottom: 50px;
+      }
+      .quadrado-direita5 {
+        margin-bottom: 50px;
+      }
+    </style>
+    <title>Globo.com</title>
+  </head>
+
+  <body>
+    <div class="tudo">
+      <a href="https://globo.com"
+        ><img
+          src="imagem/svg/globo-logo.svg"
+          alt="logo globo.com"
+          width="171"
+          height="36"
+          class="logo"
+        />
+      </a>
+      <p class="risquinho"></p>
+      <div class="conteudo">
+        <a href="https://globo.com">
+          <div class="barra-conteudos">
+            <p style="color: #c3170c;" title="jornalismo">g1</p>
+            <p style="color: #1e4b9b;" title="oglobo">o globo</p>
+            <p style="color: #006766;" title="valor">valor</p>
+            <p style="color: #07aa47;" title="esporte">ge</p>
+            <p style="color: #e3662b;" title="cartola">cartola</p>
+            <p style="color: #fb0735;" title="globoplay">globoplay</p>
+            <p style="color: #ff75bb;" title="dropz">dropz</p>
+            <p style="color: #ec7d00;" title="entreterimento">gshow</p>
+            <p style="color: #323333;" title="quem">quem</p>
+            <p style="color: #a81d83;" title="receitas">receitas</p>
+          </div>
+        </a>
+      </div>
+      <p class="risquinho"></p>
+      <a href="https://globo.com">
+        <div class="bloco-central">
+          <div class="noticia-esquerda">
+            <div class="header">
+              <h1>
+                Vacinados entrarão nos EUA sem quarentena a partir de 8 de
+                novembro
+              </h1>
+              <h2>
+                Ministros ‘lavam as mãos’ sobre Bolsonaro não se vacinar, relata
+                blog
+              </h2>
+              <h3>
+                Bandeiras em frente ao Congresso lembram 600 mil brasileiros
+                mortos
+              </h3>
+            </div>
+            <p class="risquinho"></p>
+            <div class="bloco-esquerda">
+              <div class="imagem-esquerda">
+                <div class="bloquinho-esquerda">
+                  <img src="imagem/alem-do-presidente.jpeg" />
+                  <h4>Além do presidente</h4>
+                  <h5>CPI deve pedir indiciamento de filhos de Bolsonaro</h5>
+                  <h6>A envangélicos, Bolsonaro diz'chorar sozinho em casa'</h6>
+                </div>
+                <div class="bloquinho-esquerda">
+                  <img src="imagem/crimes-na-fronteira.jpeg" />
+                  <h4>Crimes na fronteira</h4>
+                  <h5>Triânguo amoroso vira chave em linha de investigação</h5>
+                  <h6>1ª de 7 mortes entre Brasil e Paraguai faz 1 semana</h6>
+                </div>
+                <div class="bloquinho-esquerda">
+                  <img src="imagem/reino-unido.jpeg" />
+                  <h4>Reino unido</h4>
+                  <h5>Parlamentar inglês é esfaqueado e morto em igreja</h5>
+                  <h6>Homem de 25 anos foi preso no local, diz polícia</h6>
+                </div>
+              </div>
+              <p class="risquinho"></p>
+              <div class="ultimo-bloco-esquerda">
+                <div class="ultimo-bloquinho-esquerda">
+                  <h4>Sabatina de Mendonça</h4>
+                  <h5>PGR é consultada sobre investigação contra Alcolumbre</h5>
+                  <h6>Aliados dizem que situação de Alcolumbre ‘está feia’</h6>
+                </div>
+                <div class="ultimo-bloquinho-esquerda">
+                  <h4>Negócio de R$ 5,2 bi</h4>
+                  <h5>Pão de Açúcar vende 71 pontos do Extra para o Assaí</h5>
+                  <h6>
+                    Lembre fusões e aquisições bilionárias recentes no país
+                  </h6>
+                </div>
+                <div class="ultimo-bloquinho-esquerda">
+                  <h4>Elo com caminhoneiros</h4>
+                  <h5>
+                    Podcast: ministro liga empresários a atos de 7/9; ouça
+                  </h5>
+                  <h6>Neto de Jango critica veto de Bolsonaro a tributo</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="risco-vertical"></p>
+          <div class="noticia-direita">
+            <div class="noticia-direita-esquerda">
+              <div class="quadrado-direita1">
+                <img
+                  src="imagem/espiao-estatistico.jpeg"
+                  class="imagem-direita"
+                />
+                <p class="corpo1">Espião estatístico</p>
+                <p class="corpo2">
+                  Classificação do returno tem Palmeiras em último; veja as
+                  posições
+                </p>
+                <p class="corpo3">
+                  Crespo almoça com diretoria e deve se despedir no CT
+                </p>
+              </div>
+              <div class="quadrado-direita2">
+                <img
+                  class="imagem-direita"
+                  src="imagem/greve-segue-na-raposa.jpeg"
+                />
+                <p class="corpo1">Greve segue na Raposa</p>
+                <p class="corpo2">
+                  Cruzeiro não viabiliza recurso para quitar atrasados
+                </p>
+              </div>
+              <div class="quadrado-direita3">
+                <img
+                  class="imagem-direita"
+                  src="imagem/campeonato-frances.jpeg"
+                />
+                <p class="corpo1">Campeonato francês</p>
+                <p class="corpo2">
+                  Desfalcado, PSG recebe o Angers, 4º colocado
+                </p>
+              </div>
+            </div>
+            <p class="risco-vertical"></p>
+            <div class="noticia-direita-direita">
+              <div class="quadrado-direita4">
+                <img class="imagem-direita" src="imagem/ferias-e-jh.jpeg" />
+                <p class="corpo1">Férias e JH</p>
+                <p class="corpo2">
+                  César Tralli se emociona na despedida do SP1
+                </p>
+              </div>
+              <div class="quadrado-direita5">
+                <img
+                  class="imagem-direita"
+                  src="imagem/verdades-secretas-2.jpeg"
+                />
+                <p class="corpo1">Verdades Sceretas 2</p>
+                <p class="corpo2">
+                  Angel cruza a passarela poderosa; reveja desfiles
+                </p>
+                <p class="corpo3">Blanche terá dois relacionamentos</p>
+                <p class="corpo4">Gabriel viverá sadomasoquista</p>
+                <p></p>
+              </div>
+
+              <div class="quadrado-direita6">
+                <img
+                  class="imagem-direita"
+                  src="imagem/nos-tempos-do-imperador.jpeg"
+                />
+                <p class="corpo1">Nos Tempos do Imperador</p>
+                <p class="corpo2">Lota vai cair em golpe</p>
+                <p class="corpo3">Teresa toma decisão radical</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </body>
+</html>
