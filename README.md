@@ -16,6 +16,10 @@
 
 ---
 
+<img src="globo-display.png">
+
+------
+
 <p align="center"> This is a HTML + CSS project based on the website <a href="https://www.globo.com/">Globo Site</a> style with focus on training static front-end.
 </p>
 
@@ -46,8 +50,8 @@ This is a static website, you can only click to start the sound on the top of th
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
-- [HTML](https://www.mongodb.com/) - Markup Language
-- [CSS](https://expressjs.com/) - Style Language
+- [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML) - Markup Language
+- [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS) - Style Language
 
 ## ✍️ Authors <a name = "authors"></a>
 
