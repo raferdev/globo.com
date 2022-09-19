@@ -1,7 +1,7 @@
 {
-  "name": "globo-so-que-no",
-  "version": "1.0.0",
-  "description": "plim plim",
+  "name": "globo",
+  "version": "1.0.1",
+  "description": "",
   "main": "index.html",
   "scripts": {
     "start": "serve",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/codesandbox-app/static-template.git"
+    "url": "git+https://github.com/rafaelfernandev/globo.com"
   },
   "keywords": [],
-  "author": "Ives van Hoorne",
+  "author": "rafaelfernandev@outlook.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/codesandbox-app/static-template/issues"
+    "url": "https://github.com/rafaelfernandev/globo.com/issues"
   },
-  "homepage": "https://github.com/codesandbox-app/static-template#readme",
+  "homepage": "https://github.com/rafaelfernandev/globo.com",
   "devDependencies": {
     "serve": "^11.2.0"
   }
