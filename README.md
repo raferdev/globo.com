@@ -33,7 +33,7 @@
 
 ## 🧐 About <a name = "about"></a>
 
-This project i use to understand the HTML and CSS notation. I have to search by specific tags in html to recreate the original site and css properties to interage with user and organize the front-end. I put one sound introducing the site just to see how the navigator shows, you can see on the top of the site.
+This project i use to understand the HTML and CSS notation. I had to search by specific tags in html to recreate the original site and css properties to interage with user and organize the front-end. I put one sound introducing the site just to see how the navigator shows, you can see on the top of the site.
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
