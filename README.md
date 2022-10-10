@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://rafaelfernandev.github.io/globo.com/">
+  <a href="https://raferdev.github.io/globo.com/">
  <img width=200px height=200px src="./redme.png" alt="Project logo"></a>
 </p>
 
@@ -37,7 +37,7 @@ This project i use to understand the HTML and CSS notation. I have to search by 
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
-You can clone the project and start on your local host or open the site hospeded <a href="https://rafaelfernandev.github.io/globo.com/">here</a>
+You can clone the project and start on your local host or open the site hospeded <a href="https://raferdev.github.io/globo.com/">here</a>
 
 Clone
 
